@@ -1,27 +1,17 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main() {
 
-int a = 16
-int b = 3
+    int a = 16;      
+    int b = 3;      
 
-int somme(a, b) {
-  somme = a + b;
-return somme;
+    // Je définis ensuite les fonctions après avoir initié les variables
 
-int soustraction(a, b) {
-  soustraction = b - a;
-return soustraction;
+    printf("Addition : %d + %d = %d\n", a, b, a + b);
+    printf("Soustraction : %d - %d = %d\n", a, b, a - b);
+    printf("Multiplication : %d * %d = %d\n", a, b, a * b);
+    printf("Division : %d / %d = %d\n", a, b, a / b);
+    printf("Modulo : %d %% %d = %d\n", a, b, a % b);
 
-int multiplication(a, b) {
-  multiplication = a * b;
-return multiplication;
-
-int division(a, b) {
-  multiplication = a / b;
-return division;
-
-int modulo(a, b) {
-  modulo = a%b;
-return modulo;
+    return 0; 
+}
