@@ -11,20 +11,18 @@ int main() {
   for (int i=1; i<=compteur; i++){
     for(int j = 1; j <= i; j++){
       if (i == 1) {
-        printf("* "); // Pour la premiere ligne, ça commence forcément par une *
+        printf("*"); // Pour la premiere ligne, ça commence forcément par une *
       }
-      else if(i==2){
-        printf("** "); //Pareil pour la deuxieme
-      }
-    
       else if (i==compteur){
-        printf("* "); // derniere ligne en étoiles
+        printf("*"); // derniere ligne en étoiles
       }
       else {
           if (j == 1)
             printf("*"); 
           else {
             printf("#");
+          else if (j = i){
+            printf("*"); // Pour mettre l'étoile a la derniere ligne
           }
       }
     }
@@ -32,5 +30,6 @@ int main() {
   }
   return 0;
 }
+
 
 
